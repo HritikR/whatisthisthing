@@ -24,7 +24,7 @@ export default function Home({redditPosts}) {
         <meta name="description" content="Created By Hritik R" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar title="What is that thing?"/>
+      <NavBar title="What is this thing?"/>
       <section className="bg-white dark:bg-gray-900">
         
   <div className="container px-6 py-10 mx-auto">
