@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "axios": "^0.26.1",
+    "g": "^2.0.1",
     "mobile-device-detect": "^0.4.3",
     "moment": "^2.29.2",
     "next": "12.1.4",

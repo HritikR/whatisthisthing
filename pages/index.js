@@ -36,6 +36,11 @@ export default function Home({redditPosts}) {
   <p className="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
   {`If you have an object and you don't know what it is, this is the place for you to search for an answer.We may not know the "why" but we can help with the "what".`}
   </p>
+ <a href="https://github.com/HritikR">
+   <p className="max-w-2xl mx-auto my-2 text-sm text-center text-gray-500 dark:text-gray-300">
+    ~ Made With ❤ By Hritik R ~
+  </p>
+  </a>
        <Content redditPosts={redditPosts}/>  
   </div>
 </section>
