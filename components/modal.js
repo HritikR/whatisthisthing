@@ -50,7 +50,7 @@ export default function Modal({showModal, setShowModal, is_gallery, thumbnail, t
         </div>
         <div className="p-6 space-y-6">
         { (is_gallery == false )? (
-  <Image loading="lazy" className="object-contain object-center w-full h-56" src={`/api/imagefetcher?url=${encodeURIComponent(thumbnail)}`} 
+  <Image loading="lazy" className="object-contain object-center w-full h-56" src={thumbnail} 
   alt="post-image" width={400} height={isMobile ? 400 : 120} layout="responsive"/>
      ) : (<ImageGallery gallery={thumbnail} width={400} height={isMobile ? 400 : 120} filltype={"object-contain"}/>)}
         </div>

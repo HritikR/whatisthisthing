@@ -12,7 +12,7 @@ var dateString = moment.unix(props.timestamp).format("DD/MM/YYYY hh:ss A");
     <Modal title={props.title} showModal={showModal} setShowModal={setShowModal} is_gallery={props.is_gallery} thumbnail={props.thumbnail} commentsLink={props.commentsLink} author={props.author} status={props.status} />
     <div className="max-w-sm mx-auto w-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 hover:border border-solid md: border border-solid">
     { (props.is_gallery == false )? (
-  <Image loading="lazy" className="object-cover object-center w-full h-56" src={`/api/imagefetcher?url=${encodeURIComponent(props.thumbnail)}`} 
+  <Image loading="lazy" className="object-cover object-center w-full h-56" src={props.thumbnail} 
   alt="post-image" width={400} height={200} layout="responsive"/>
      ) : (<ImageGallery gallery={props.thumbnail} width={400} height={200} filltype="object-cover"/>)}
   <div className="px-6 py-4">
